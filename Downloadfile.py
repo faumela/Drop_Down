@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 chromeOptions = Options()
-chromeOptions.add_experimental_option("prefs",{"download.default_directory": "E:\\Saba\\Py_downloads"})
+chromeOptions = Options().add_experimental_option("prefs",{"download.default_directory": "E:\\Saba\\Py_downloads"})
 
 driver = webdriver.Chrome(executable_path="C:\\Users\\ANJUM\\Drop_Down\\Drivers\\chromedriver.exe", chrome_options=chromeOptions)
 
